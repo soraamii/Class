@@ -6,6 +6,7 @@ public class Member {
 		
 		
 		
+		
 
 
 		// 1-2
