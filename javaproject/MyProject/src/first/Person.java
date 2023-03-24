@@ -1,4 +1,4 @@
-package chapter;
+package first;
 
 public class Person {
 
@@ -8,8 +8,8 @@ public class Person {
 		String phone = "010-2406-4924";
 		String id = "930419-1234567";
 		
-		
-	
+
+
 
 	}
 
