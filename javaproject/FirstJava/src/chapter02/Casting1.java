@@ -8,7 +8,6 @@ public class Casting1 {
 		
 		double d = 100.0;
 		
-		System.out.println("d = " + d);
 		
 		int i = 100;
 		int result = i + (int)d;
