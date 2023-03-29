@@ -6,7 +6,7 @@ public class ClassMethod {
 	
 	static int cv = 30; // 클래스 변수
 	
-	// 인스턴스 메소드
+	
 	void printNumber1() {
 		System.out.println(iv);
 		System.out.println(cv);
