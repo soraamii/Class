@@ -12,7 +12,7 @@ public class Phone {
 		this.phoneNumber = phoneNumber; //초기화
 	}
 	
-	public Phone() {}
+	public Phone() {}	//기본 생성자
 	
 	void call() {
 		System.out.println(phoneNumber + "에서 전화를 겁니다.");
