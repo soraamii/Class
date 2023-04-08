@@ -18,6 +18,7 @@ public class BaseballPlayer {
 	}
 
 
+
 	public BaseballPlayer() {
 		// 기본생성자 
 		
@@ -63,6 +64,29 @@ public class BaseballPlayer {
 		this.age = age;
 	}
 
+	@Override
+	public int hashCode() {
+		
+		return this.age;
+	}
+
+
+	@Override
+	public boolean equals(Object obj) {
+		
+		boolean result = false;
+		
+		if(obj != null && obj instanceof BaseballPlayer) {
+			
+			BaseballPlayer player = (BaseballPlayer)obj;
+			result = this.team.equals(player.getTeam()) 
+					&& this.name.equals(player.name) 
+					&& this.age == player.getAge();
+		}
+		
+		
+		return result;
+	}
 
 	@Override
 	public String toString() {
