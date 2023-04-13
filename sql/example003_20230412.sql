@@ -3,14 +3,17 @@ select substr(hiredate, 1, 2) as "입사년도",
         substr(hiredate, 4, 2) as "입사월"
 from emp;
 
+select substr(hiredate, 1, 5) as "입사년도/ 입사월"
+from emp;
+
 --17. SUBSTR 함수를 사용하여 4월에 입사한 사원을 출력하시오.
-select ename from emp where substr(hiredate, 4, 2) = 04;
+select * from emp where substr(hiredate, 4, 2) = '04';
 
 --18. MOD 함수를 사용하여 사원번호가 짝수인 사람만 출력하시오.
 select * from emp where mod(empno, 2) = 0;
 
 --19. 입사일을 년도는 2자리(YY), 월은 숫자(MM)로 표시하고 요일은 약어 (DY)로 지정하여 출력하시오.
-select to_char(hiredate,'YY-MM-DY') as "입사일" from emp;
+select ename, to_char(hiredate,'YY-MM-DY') as "입사일" from emp;
 
 --20. 올해 며칠이 지났는지 출력하시오. 현재날짜에서 올해 1월 1일을 뺀 결과를 출력하고
 --TO_DATE 함수를 사용하여 데이터 형을 일치 시키시오.
@@ -48,7 +51,11 @@ from emp
 group by job;
 
 --26. 관리자 수를 출력하시오.
-select count(mgr)
+select ename, empno, mgr
+from emp
+group by mgr;
+
+select count(distinct mgr)
 from emp;
 
 --27. 급여 최고액, 급여 최저액의 차액을 출력하시오.
@@ -69,22 +76,23 @@ order by min(sal) desc;
 --평균 급여는 소수점 둘째 자리로 반올림 하시오.
 select deptno, count(ename), round(avg(sal), 2)
 from emp
-group by deptno;
+group by deptno
+order by deptno;
 
 --30. 각 부서에 대해 부서번호 이름, 지역 명, 사원 수, 부서내의 모든 사원의 평균 급여를 출력하시오. 
 --평균 급여는 정수로 반올림 하시오. DECODE 사용.
-select decode(deptno,
-        10, '부서1',
-        20, '부서2',
-        30, '부서3',
-        40, '부서4'
-        ),
+select deptno, decode(deptno,
+        10, 'ACCOUNTING',
+        20, 'RESEARCH',
+        30, 'SALES',
+        40, 'OPERATIONS'
+        )as dname,
         decode(deptno,
         10, 'NEW YORK',
         20, 'DALLAS',
         30, 'CHICAGO',
         40, 'BOSTON'
-        ), count(*), trunc(avg(sal))
+        )as loc, count(*), round(avg(sal))
 from emp
 group by deptno
 order by deptno;
