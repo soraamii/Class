@@ -23,6 +23,19 @@ on emp.deptno = dept.deptno
 ;
 
 select *
+from emp natural join dept
+;
+
+select deptno
+from emp natural join dept
+;
+
+select *
+from emp join dept
+using (deptno)
+;
+
+select *
 from emp, dept
 where emp.deptno = dept.deptno;
 
@@ -31,7 +44,7 @@ from emp e, dept d
 where e.deptno = d.deptno
 ;
 
--- 이름이 SCOTT인 사람의 부서명을 출력
+-- 이름이 SCOTT인 사원의 부서명을 출력
 select deptno from emp where ename = 'SCOTT';
 -- 20
 select dname from dept where deptno = 20;
@@ -61,3 +74,24 @@ select e.ename, nvl(m.ename, '없음')
 from emp e, emp m
 where e.mgr = m.empno(+)
 ;
+
+select *
+from emp e1 join emp m
+on e.mgr = m.empno;
+
+select *
+from emp e left outer join emp m
+on e.mgr = m.empno
+;
+
+-- 도서 판매 정보 출력
+select * from orders;
+
+select o.orderid, c.name, b.bookname, o.saleprice, o.orderdate
+from orders o, customer c, book b
+where o.custid = c.custid and o.bookid = b.bookid
+;
+
+
+
+

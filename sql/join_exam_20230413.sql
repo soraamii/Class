@@ -11,6 +11,14 @@ from emp e inner join dept d
 on e.deptno = d.deptno
 ;
 
+select e.ename, d.dname, d.loc
+from emp e inner join dept d
+using(deptno);
+
+select ename, dname, loc
+from emp natural join dept
+;
+
 --36. 조인과 WildCARD를 사용하여 
 --이름에 ‘A’가 포함된 모든 사원의 이름과 부서명을 출력하시오.
 select e.ename, d.dname
@@ -22,12 +30,12 @@ where e.deptno = d.deptno and e.ename like '%A%'
 --모든 사원의 이름, 업무, 부서번호 및 부서명을 출력하시오.
 select e.ename, e.job, e.deptno, d.dname 
 from emp e, dept d
-where d.loc = 'NEW YORK'
+where e.deptno = d.deptno and d.loc = 'NEW YORK'
 order by e.job
 ;
 
 --38. SELF JOIN을 사용하여 사원의 이름 및 사원번호, 관리자 이름을 출력하시오.
-select e.ename, m.empno, m.ename
+select e.ename, e.empno, m.ename
 from emp e, emp m
 where e.mgr = m.empno(+)
 ;
@@ -40,12 +48,17 @@ where e.mgr = m.empno(+)
 order by m.empno desc
 ;
 
+select e.ename, e.empno, m.ename
+from emp e left outer join emp m
+on e.mgr = m.empno
+;
+
 --40. SELF JOIN을 사용하여 
 --지정한 사원의 이름, 부서번호, 지정한 사원과 동일한 부서에서 근무하는 사원을 출력하시오. 
 --( SCOTT )
 select e.ename, e.deptno 
 from emp e, emp s
-where e.deptno = s.deptno and s.ename = 'SCOTT' 
+where e.deptno = s.deptno and e.ename != 'SCOTT' and s.ename = 'SCOTT'
 ;
 
 --41. SELF JOIN을 사용하여 WARD 사원보다 늦게 입사한 사원의 이름과 입사일을 출력하시오.
@@ -59,6 +72,6 @@ where e.hiredate > w.hiredate and w.ename = 'WARD'
 --관리자의 이름 및 입사일과 함께 출력하시오.
 select e.ename, e.hiredate
 from emp e, emp m
-where e.mgr = m.empno and e.hiredate < m.hiredate
+where e.mgr = m.empno and e.hiredate < m.hiredatet
 ;
 ​
