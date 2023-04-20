@@ -17,7 +17,7 @@ public class ConnectionTest {
          // 2. Conection 객체를 생성 : 연결 정보
          // jdbcUrl
          
-         //ofacle연결
+         //oracle연결
          //String dbUrl = "jdbc:oracle:thin:@localhost:1521:xe";
          //Connection conn = DriverManager.getConnection(dbUrl, "hr", "tiger");
       

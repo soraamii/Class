@@ -23,7 +23,7 @@ public class DeleteTest {
 			conn = DriverManager.getConnection(dbUrl, "hr", "tiger");
 			
 			// 트렌젝션 설정
-			conn.setAutoCommit(false);
+			//conn.setAutoCommit(false);
 			
 			// Mysql 연결
 			//String dbUrl = "jdbc:mysql://localhost:3306/project";
@@ -43,7 +43,7 @@ public class DeleteTest {
 			
 			
 			// 완료 commit
-			conn.commit();
+			//conn.commit();
 			
 			
 			

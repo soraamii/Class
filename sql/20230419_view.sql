@@ -53,3 +53,7 @@ where rownum <= 3
 order by hiredate
 ;
 
+
+select * from dept where deptno = ?;
+
+commit;
