@@ -22,7 +22,7 @@ public class DateServlet extends HttpServlet {
 		
 		Date now = new Date();
 		
-		// 응담처리 : html
+		// 응답처리 : html
 		PrintWriter out = response.getWriter();
 		out.println("<!DOCTYPE html>");
 		out.println("<html>");
