@@ -1,6 +1,7 @@
 package todo.controller;
 
 import java.io.IOException;
+import java.util.List;
 
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
@@ -9,9 +10,18 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import todo.domain.TodoDTO;
+import todo.service.TodoListService;
+
 @WebServlet(name = "todoListController", urlPatterns = "/todo/list")
 public class TodoListController extends HttpServlet {
 
+	TodoListService listService;
+	
+	public TodoListController() {
+		this.listService = new TodoListService(null);
+	}
+	
 	// 화면에 리스트 출력 : GET 방식 요청
 	// 브라우저의 url 창에 입력해서 요청 = GET
 	
@@ -24,7 +34,12 @@ public class TodoListController extends HttpServlet {
 		
 		// 1. 사용자 요청 분석
 		// 2. Service에 요청 -> 응답 데이터 반환
+		
+		List<TodoDTO> list = listService.getList();
+		
 		// 3. 응답 데이터 request의 속성에 저장 : view로 데이터 전달
+		request.setAttribute("todoList", list);
+		
 		// 4. view 지정 -> forward
 		
 		
