@@ -24,6 +24,8 @@ public class TodoRegisterController extends HttpServlet {
 	
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		
+		System.out.println("TodoRegisterController...doPost()...");
+		
 		// post 방식의 데이터 전달 -> 파라미터 한글 처리
 		request.setCharacterEncoding("utf-8");
 		
@@ -32,7 +34,7 @@ public class TodoRegisterController extends HttpServlet {
 		String dueDate = request.getParameter("duedate");
 		System.out.println(todo + " : " + dueDate);
 		
-		System.out.println("TodoRegisterController...doPost()...");
+		
 		
 		// redirection : "list"
 		response.sendRedirect("list"); // 외부에서 접속하는 URI
