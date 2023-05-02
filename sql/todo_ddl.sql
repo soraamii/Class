@@ -5,3 +5,5 @@ CREATE TABLE `tbl_todo` (
   `finished` tinyint NOT NULL DEFAULT '0',
   PRIMARY KEY (`tno`)
 ) 
+
+

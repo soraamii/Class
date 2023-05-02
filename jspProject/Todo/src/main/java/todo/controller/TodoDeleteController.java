@@ -7,9 +7,17 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import todo.service.TodoDeleteService;
+
 
 @WebServlet("/todo/delete")
 public class TodoDeleteController extends HttpServlet {
+	
+	TodoDeleteService deleteService;
+	
+	public TodoDeleteController() {
+		this.deleteService = TodoDeleteService.getInstance();
+	}
 
 	
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
@@ -22,9 +30,15 @@ public class TodoDeleteController extends HttpServlet {
 		int no = Integer.parseInt(noStr);
 		
 		// Service로 no 전달 -> 삭제 처리
+		int result = deleteService.delete(no);
 		
 		// 결과
-		System.out.println(no + "번 할 일이 삭제되었습니다.");
+		if(result > 0) {
+			System.out.println(no + "번 할 일이 삭제되었습니다.");
+		} else {
+			System.out.println("삭제 실패");
+		}
+		
 		
 		// redirect(list)
 		response.sendRedirect("list");
