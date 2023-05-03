@@ -27,6 +27,9 @@ public class TodoModifyController extends HttpServlet {
 	}
 	
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		
+		System.out.println("TodoModifyController...doGet()....");
+		
 		// 수정 폼 : 이전에 입력했던 데이터가 화면에 출력
 		
 		// no 값을 받고

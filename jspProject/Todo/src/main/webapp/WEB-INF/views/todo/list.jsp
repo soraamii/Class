@@ -9,7 +9,7 @@
 </head>
 <body>
 
-<h1>Todo LIST</h1>
+<h1>Todo LIST ( ${loginForm} ) </h1>
 
 <ul>
 	<c:forEach items="${todoList}" var="todo" >
@@ -21,6 +21,9 @@
 
 
 <a href="${pageContext.request.contextPath}/todo/register">Todo Register</a>
+
+<a href="/app/login"> 로그인 </a>
+<a href="/app/logout"> 로그아웃 </a>
 
 </body>
 </html>

@@ -1,0 +1,50 @@
+package member.controller;
+
+import java.io.IOException;
+import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
+
+
+@WebServlet("/login")
+public class LoginController extends HttpServlet {
+	
+	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		
+		System.out.println("LoginController...doGet()...");
+		
+		request.getRequestDispatcher("/WEB-INF/views/member/loginForm.jsp").forward(request, response);
+	}
+
+
+	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+
+		System.out.println("LoginController...doPost()...");
+		
+		// 사용자가 입력한 id와 pw를 받아서 인증 처리
+		String mid = request.getParameter("mid");
+		String pw = request.getParameter("pw");
+		
+		// 현재 세션정보 획득
+		HttpSession session = request.getSession();
+		
+		
+		// 인증 처리 : id와 pw가 같은 문자열일 때 인증되었다고 판단
+		if(mid.equals(pw)) {
+			// 회원 -> HttpSession 객체에 회원정보를 저장
+			// 저장된 회원 정보는 회원이 로그인 했다의 판단 기준으로 사용
+			session.setAttribute("LoginInfo", mid);
+			
+			response.sendRedirect("/app/index.jsp");
+			//return ;
+		} else {
+			System.out.println("인증 실패");
+			response.sendRedirect("/app/login");
+		}
+		
+	}
+
+}
