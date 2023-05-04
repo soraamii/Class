@@ -8,15 +8,13 @@
 </head>
 <body>
 
-<h1>로그인</h1>
+<h1>로그인    ${cookie.reid.value}  </h1>
 <hr>
-
 <form method="post">
-ID : <input name="mid" > <br>
+ID : <input name="mid" value="${cookie.reid.value}"> <br>
 PW : <input type="password" name="pw"> <br>
+<input type="checkbox" name="reid" ${cookie.reid ne null ? 'checked' : ''} > ID 기억하기 <br>
 <input type="submit" value="로그인">
-
-
 </form>
 
 

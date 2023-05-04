@@ -48,7 +48,7 @@ public class TodoInsertService {
 			}
 		}
 
-		return 1;
+		return result;
 	}
 
 }
