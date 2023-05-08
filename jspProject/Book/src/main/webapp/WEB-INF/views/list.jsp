@@ -8,7 +8,9 @@
 </head>
 <body>
 
-	<h1>Book List Page ${bookList.bookname}</h1>
+	<h1>Book List Page [${bookList.bookname}]</h1>
+	
+	
 	
 	
 

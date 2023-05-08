@@ -9,7 +9,12 @@ import javax.servlet.http.HttpServlet;
 
 public class Loader extends HttpServlet {
 	
+	// init() 메소드 : 서블릿 초기화시 호출되는 메소드
+	// -> 데이터베이스 드라이버를 로드하는 역할
 	
+	// Class.forName() : "com.mysql.cj.jdbc.Driver" 로드
+	// -> 해당 클래스를 로드할 때 해당 클래스의 static 블록 실행
+	// MySQL 드라이버 로드
 	
 	@Override
 	public void init() throws ServletException {

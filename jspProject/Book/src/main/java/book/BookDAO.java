@@ -23,7 +23,7 @@ public class BookDAO {
 		
 		// Connection // DriverManager
 		try {
-			Connection conn = DriverManager.getConnection("jdbc:mysql://192.168.0.49:3306/project", "himedia", "tiger");
+			Connection conn = DriverManager.getConnection("jdbc:mysql://119.197.66.211:3306/project", "himedia", "tiger");
 			
 			// Statement
 			
