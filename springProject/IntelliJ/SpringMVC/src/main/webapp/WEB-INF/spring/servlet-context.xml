@@ -13,7 +13,7 @@
     <!-- 정적자원 경로 설정 : html, css, js, image -->
     <mvc:resources mapping="/resources/**" location="/resources/"></mvc:resources>
     <!-- /app/resources/scc/default.css -->
-    <mvc:resources mapping="/resources/**" location="/css/"></mvc:resources>
+    <mvc:resources mapping="/css/**" location="/css/"></mvc:resources>
     <!-- /css/default.css -->
 
     <!-- view 설정 -->
