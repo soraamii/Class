@@ -1,0 +1,11 @@
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.hi.bookspring.bookspring.mapper.BookMapper">
+
+    <select id="selectAll" resultType="com.hi.bookspring.bookspring.domain.BookDTO">
+
+        select * from book
+
+    </select>
