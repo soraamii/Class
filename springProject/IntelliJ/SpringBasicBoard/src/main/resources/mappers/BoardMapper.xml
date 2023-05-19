@@ -1,22 +1,62 @@
 <!DOCTYPE mapper
         PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
-
-<!-- 인터페이스 이름과 일치시켜야 함 -->
 <mapper namespace="com.hi.board.mapper.BoardMapper">
 
-    <select id="selectAll" resultType="com.hi.board.domain.BoardDTO">
+    <select id="selectList" resultType="com.hi.board.domain.BoardDTO">
 
-        select * from tbl_board
+        select * from tbl_board order by bno desc limit #{param1}, #{param2}
+
+    </select>
+
+    <select id="selectTotalCount" resultType="int">
+
+        select count(*) from tbl_board
 
     </select>
 
 
+    <select id="selectAll"
+            resultType="com.hi.board.domain.BoardDTO"
+    >
+        select * from tbl_board
+    </select>
 
-    <insert id="insertBoard" parameterType="com.hi.board.domain.RequestRegBoard">
+    <select id="selectByBno"
+            resultType="com.hi.board.domain.BoardDTO"
+    >
+        select * from tbl_board where bno=#{bno}
+    </select>
 
-        insert into tbl_board (title, content, writer) values (#{title}, #{content}, #{writer})
+
+    <insert id="insertBoard"
+            parameterType="com.hi.board.domain.RequestRegBoard">
+
+        <!-- file : 파일의 이름을 저장하는 문자열 -->
+        insert into tbl_board (title, content, writer, file)
+
+        values (#{title}, #{content}, #{writer}, #{filename})
 
     </insert>
+
+
+    <update id="updateBoard"
+            parameterType="com.hi.board.domain.RequestModifyRequest">
+
+        update tbl_board
+
+        set title=#{title},
+        content=#{content},
+        writer=#{writer},
+        file=#{filename},
+        updatedate=now()
+
+        where bno=#{bno}
+
+    </update>
+
+    <delete id="deleteBoard">
+        delete from tbl_board where bno=#{no}
+    </delete>
 
 </mapper>

@@ -28,15 +28,45 @@ public class ConnectionTest {
     @Autowired(required = false)
     private BoardMapper boardMapper;
 
+
+
     @Test
-    public void connectionTest() throws SQLException {
+    public void selectByBnoTest(){
 
-        Connection conn = dataSource.getConnection();
+        BoardDTO board = boardMapper.selectByBno(1);
+        log.info("1번 게시물 : "+ board);
+        board = boardMapper.selectByBno(6);
+        log.info("6번 게시물 : " + board);
 
-        log.info("conn =>" + conn);
-
-        conn.close();
     }
+
+
+    @Test
+    public void deptListTest(){
+
+        List<BoardDTO> list = boardMapper.selectAll();
+
+        log.info(list);
+
+    }
+
+
+    @Test
+    public void boardInsertTest(){
+
+        RequestRegBoard board = RequestRegBoard.builder()
+                .title("테스트 제목")
+                .content("테스트 내용")
+                .writer("작성자")
+                .build();
+
+        log.info(board);
+
+        boardMapper.insertBoard(board);
+
+
+    }
+
 
     @Test
     public void mapperTest(){
@@ -45,23 +75,17 @@ public class ConnectionTest {
 
     }
 
+
     @Test
-    public void boardInsertTest(){
+    public void connectionTest() throws SQLException {
 
-        RequestRegBoard board = RequestRegBoard.builder().title("테스트 제목").content("테스트 내용").writer("작성자").build();
+        Connection conn = dataSource.getConnection();
 
-        log.info(board);
+        log.info("conn => " + conn);
 
-        boardMapper.insertBoard(board);
+        conn.close();
 
     }
 
-    @Test
-    public void boardListTest(){
-
-        List<BoardDTO> list = boardMapper.selectAll();
-
-        log.info(list);
-    }
 
 }

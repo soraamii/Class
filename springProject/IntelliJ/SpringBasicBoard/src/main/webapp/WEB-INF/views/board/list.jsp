@@ -33,7 +33,7 @@
 
         <tr>
             <td>${board.bno}</td>
-            <td><a href="/board/read ? bno = ${board.bno}">${board.title}</a></td>
+            <td><a href="/board/read?bno=${board.bno}">${board.title}</a></td>
             <td>${board.writer}</td>
             <td>${board.regdate}</td>
         </tr>
