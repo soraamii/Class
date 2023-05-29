@@ -15,6 +15,7 @@ public class DeptListService {
     private DeptMapper mapper;
 
     public List<DeptDTO> getList(){
+
         return mapper.selectAll();
     }
 

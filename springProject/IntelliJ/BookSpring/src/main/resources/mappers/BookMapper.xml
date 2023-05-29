@@ -9,3 +9,11 @@
         select * from book
 
     </select>
+    
+    <insert id="insertBook" parameterType="com.hi.bookspring.bookspring.domain.BookRegistRequest">
+
+        insert into book (bookname, publisher, price) values (#{bookname}, #{publisher}, #{price})
+
+    </insert>
+
+</mapper>

@@ -20,7 +20,7 @@ public class BoardWriteService {
     private BoardMapper boardMapper;
 
     public int writeBoard(
-            RequestRegBoard board,
+            RequestRegBoard  board,
             HttpServletRequest request
     ){
 

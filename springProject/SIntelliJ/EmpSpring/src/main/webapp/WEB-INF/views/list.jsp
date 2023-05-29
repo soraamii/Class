@@ -29,7 +29,7 @@
     <c:forEach items="${list}" var="emp">
         <tr>
             <td>${emp.empno}</td>
-            <td>${emp.ename}</td>
+            <td><a href="/read?empno=${emp.empno}">${emp.ename}</a></td>
             <td>${emp.job}</td>
             <td>${emp.mgr}</td>
             <td>${emp.hiredate}</td>
@@ -48,6 +48,6 @@
 
 </table>
 
-<a href="/emp/regist">사원 등록</a>
+<a href="/registForm">사원 등록</a>
 </body>
 </html>

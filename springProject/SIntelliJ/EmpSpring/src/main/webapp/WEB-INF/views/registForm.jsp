@@ -14,7 +14,9 @@
 
 <h1>사원 등록</h1>
 <hr>
-<form method="post">
+<%-- enctype="multipart/form-data" => HTML <form> 요소의 속성 중 하나임
+     => 웹 페이지에서 파일 업로드와 관련된 데이터를 서버로 전송할 때 사용--%>
+<form method="post" enctype="multipart/form-data">
     <table>
       <tr>
         <td>사원 이름</td>
@@ -43,6 +45,10 @@
       <tr>
         <td>부서번호</td>
         <td><input type="number" name="deptno"></td>
+      </tr>
+      <tr>
+        <td>첨부파일(이미지)</td>
+        <td><input type="file" name="file"></td>
       </tr>
       <tr>
         <td></td>
