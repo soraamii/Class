@@ -37,6 +37,7 @@ public class BoardModifyService {
             File newFile = new File(realPath, newFilename);
             try {
                 modifyRequest.getFile().transferTo(newFile);
+
                 // filename 속성에 새로운 파일 이름을 저장
                 modifyRequest.setFilename(newFilename);
             } catch (IOException e) {

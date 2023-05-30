@@ -28,8 +28,7 @@ public class DeptListController {
     ){
         log.info("GET  /dept/list");
 
-        DeptSearchOption searchOption = DeptSearchOption
-                .builder()
+        DeptSearchOption searchOption = DeptSearchOption.builder()
                 .searchType(keyword.trim().length()<1 ? null : searchType)
                 .keyword(keyword.trim().length()<1 ? null : keyword)
                 .build();

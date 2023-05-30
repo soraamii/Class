@@ -38,22 +38,22 @@
     <!-- 사원 리스트 추가 -->
     <insert id="insertEmp" parameterType="com.hi.empspring.domain.EmpRegistRequest">
 
-        insert into emp (ename, job, mgr, hiredate, sal, comm, deptno)
-        values (#{ename}, #{job}, #{mgr}, #{hiredate}, #{sal}, #{comm}, #{deptno})
+        insert into emp (ename, job, mgr, hiredate, sal, comm, deptno, file)
+        values (#{ename}, #{job}, #{mgr}, #{hiredate}, #{sal}, #{comm}, #{deptno}, #{filename})
 
     </insert>
 
     <!-- empno로 검색 -->
-    <select id="selectByEmpno" resultType="com.hi.empspring.domain.EmpDTO">
+    <select id="selectByEmpno" resultType="com.hi.empspring.domain.RequestModifyRequest">
 
         select * from emp where empno = #{no}
 
     </select>
 
     <!-- 사원 리스트 수정(update) -->
-    <update id="updateEmp" parameterType="com.hi.empspring.domain.EmpDTO">
+    <update id="updateEmp" parameterType="com.hi.empspring.domain.RequestModifyRequest">
 
-        update emp set ename = #{ename}, job = #{job}, mgr = #{mgr}, hiredate = #{hiredate}, sal = #{sal}, comm = #{comm}, deptno = #{deptno}
+        update emp set ename = #{ename}, job = #{job}, mgr = #{mgr}, hiredate = #{hiredate}, sal = #{sal}, comm = #{comm}, deptno = #{deptno}, file = #{filename}
         where empno = #{empno}
 
     </update>

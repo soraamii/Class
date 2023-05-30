@@ -1,6 +1,7 @@
 package com.hi.empspring.domain;
 
 import lombok.*;
+import org.springframework.web.multipart.MultipartFile;
 
 @AllArgsConstructor
 @NoArgsConstructor
@@ -16,4 +17,6 @@ public class EmpRegistRequest {
     private int sal;
     private int comm;
     private int deptno;
+    private MultipartFile file;
+    private String filename;
 }

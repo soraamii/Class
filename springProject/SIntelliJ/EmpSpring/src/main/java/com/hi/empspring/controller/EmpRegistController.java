@@ -10,9 +10,11 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 
+import javax.servlet.http.HttpServletRequest;
+
 @Controller
 @Log4j2
-@RequestMapping("/emp/regist")
+@RequestMapping("/registForm")
 public class EmpRegistController {
 
     @Autowired
@@ -21,16 +23,17 @@ public class EmpRegistController {
     @GetMapping
     public String registForm(){
         log.info("GET emp/regist");
+
         return "registForm";
     }
 
     @PostMapping
-    public String regist(EmpRegistRequest registRequest){
+    public String regist(EmpRegistRequest registRequest, HttpServletRequest request){
 
         log.info("Post /regist");
         log.info(registRequest);
-        registService.registEmp(registRequest);
+        registService.registEmp(registRequest, request);
 
-        return "redirect:list";
+        return "redirect:/emp/list";
     }
 }

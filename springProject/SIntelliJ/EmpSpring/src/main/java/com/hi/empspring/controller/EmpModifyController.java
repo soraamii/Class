@@ -1,6 +1,7 @@
 package com.hi.empspring.controller;
 
 import com.hi.empspring.domain.EmpDTO;
+import com.hi.empspring.domain.RequestModifyRequest;
 import com.hi.empspring.service.EmpModifyService;
 import com.hi.empspring.service.EmpReadService;
 import lombok.extern.log4j.Log4j2;
@@ -11,6 +12,8 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
+
+import javax.servlet.http.HttpServletRequest;
 
 @Controller
 @Log4j2
@@ -38,14 +41,13 @@ public class EmpModifyController {
     }
 
     @PostMapping
-    public String modify(EmpDTO dto){
+    public String modify(RequestModifyRequest modifyRequest, HttpServletRequest request){
 
-        log.info("POST /emp/modify");
-        log.info(dto);
+        log.info(modifyRequest);
 
-        modifyService.modifyEmp(dto);
+        modifyService.modifyEmp(modifyRequest, request);
 
-        return "redirect:list";
+        return "redirect:/emp/list";
 
     }
 

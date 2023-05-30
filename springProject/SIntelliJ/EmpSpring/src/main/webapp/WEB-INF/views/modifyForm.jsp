@@ -6,18 +6,27 @@
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <html>
 <head>
     <title>사원 정보 수정</title>
+    <style>
+
+        td {
+            padding: 10px 20px;
+        }
+
+    </style>
 </head>
 <body>
 
     <h1>사원 정보 수정</h1>
     <hr>
 
-    <form method="post">
+    <form method="post" enctype="multipart/form-data">
+        <input type="hidden" name="empno" value="${emp.empno}">
 
-        <table>
+        <table border="1">
             <tr>
                 <td>사원 번호</td>
                 <td><input type="number" name="empno" value="${emp.empno}"></td>
@@ -49,6 +58,22 @@
             <tr>
                 <td>부서번호</td>
                 <td><input type="number" name="deptno" value="${emp.deptno}"></td>
+            </tr>
+            <tr>
+                <td>첨부된 파일</td>
+                <td>
+                    <c:if test="${emp.file ne null}">
+
+                        <input type="hidden" name="oldfile" value="${emp.file}">
+                        ${emp.file}
+                    </c:if>
+                </td>
+            </tr>
+            <tr>
+                <td>첨부 파일</td>
+                <td>
+                    <input type="file" name="file">
+                </td>
             </tr>
             <tr>
                 <td></td>
