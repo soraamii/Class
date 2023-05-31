@@ -5,48 +5,27 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e37b2a19-5dce-4360-a3c3-06e2dd2c5211" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/hi/empspring/controller/EmpReadController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/hi/empspring/domain/RequestModifyRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/read.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ch3/config.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ch3/src/main/java/com/fastcampus/ch3/diCopy1/Main1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ch4/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ch4/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ch4/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ch4/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ch4/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ch4/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ch4/src/main/java/com/fastcampus/ch4/controller/LoginController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ch4/src/main/java/com/fastcampus/ch4/dao/UserDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ch4/src/main/java/com/fastcampus/ch4/dao/UserDaoImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ch4/src/main/java/com/fastcampus/ch4/domain/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ch4/src/main/resources/mybatis-config.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ch4/src/main/webapp/WEB-INF/views/loginForm.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ch4/src/main/webapp/resources/css/menu.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../IntelliJ/BookSpring/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../IntelliJ/BookSpring/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../IntelliJ/BookSpring/src/main/java/com/hi/bookspring/bookspring/controller/BookListController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../IntelliJ/BookSpring/src/main/java/com/hi/bookspring/bookspring/controller/BookListController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../IntelliJ/BookSpring/src/main/java/com/hi/bookspring/bookspring/mapper/BookMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../IntelliJ/BookSpring/src/main/java/com/hi/bookspring/bookspring/mapper/BookMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../IntelliJ/BookSpring/src/main/resources/mappers/BookMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../IntelliJ/BookSpring/src/main/resources/mappers/BookMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../IntelliJ/BookSpring/src/main/webapp/WEB-INF/views/book/list.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../../IntelliJ/BookSpring/src/main/webapp/WEB-INF/views/book/list.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../IntelliJ/DeptSpring/src/main/java/com/hi/deptspring/deptspring/controller/DeptListController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../IntelliJ/DeptSpring/src/main/java/com/hi/deptspring/deptspring/controller/DeptListController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../IntelliJ/DeptSpring/src/main/java/com/hi/deptspring/deptspring/service/DeptListService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../IntelliJ/DeptSpring/src/main/java/com/hi/deptspring/deptspring/service/DeptListService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../IntelliJ/DeptSpring/src/main/java/com/hi/deptspring/deptspring/service/DeptModifyService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../IntelliJ/DeptSpring/src/main/java/com/hi/deptspring/deptspring/service/DeptModifyService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../IntelliJ/SpringBasicBoard/src/main/java/com/hi/board/service/BoardModifyService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../IntelliJ/SpringBasicBoard/src/main/java/com/hi/board/service/BoardModifyService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../IntelliJ/SpringBasicBoard/src/main/java/com/hi/board/service/BoardWriteService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../IntelliJ/SpringBasicBoard/src/main/java/com/hi/board/service/BoardWriteService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../jspProject/Ajax/.classpath" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../jspProject/Ajax/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../jspProject/Ajax/.project" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../jspProject/Ajax/src/main/webapp/META-INF/MANIFEST.MF" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../jspProject/Ajax/src/main/webapp/ajax1.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../jspProject/Ajax/src/main/webapp/data.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../jspProject/Ajax/src/main/webapp/data.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../jspProject/Ajax/src/main/webapp/data.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../IntelliJ/SpringBasicBoard/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../IntelliJ/SpringBasicBoard/src/main/java/com/hi/board/controller/ReplyRestController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../IntelliJ/SpringBasicBoard/src/main/java/com/hi/board/controller/member/IdCheckContoller.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../IntelliJ/SpringBasicBoard/src/main/java/com/hi/board/domain/ReplyDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../IntelliJ/SpringBasicBoard/src/main/java/com/hi/board/mapper/ReplyMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../IntelliJ/SpringBasicBoard/src/main/java/com/hi/board/service/ReplyInsertService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../IntelliJ/SpringBasicBoard/src/main/java/com/hi/board/service/ReplyReadService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../IntelliJ/SpringBasicBoard/src/main/java/com/hi/board/service/member/MemberIdCheckService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../sql/tbl_reply_query.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../IntelliJ/SpringBasicBoard/src/main/java/com/hi/board/mapper/MemberMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../IntelliJ/SpringBasicBoard/src/main/java/com/hi/board/mapper/MemberMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../IntelliJ/SpringBasicBoard/src/main/webapp/WEB-INF/views/board/read.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../../IntelliJ/SpringBasicBoard/src/main/webapp/WEB-INF/views/board/read.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../IntelliJ/SpringBasicBoard/src/main/webapp/WEB-INF/views/member/regist.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../../IntelliJ/SpringBasicBoard/src/main/webapp/WEB-INF/views/member/regist.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/hi/empspring/controller/EmpModifyController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hi/empspring/controller/EmpModifyController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/hi/empspring/controller/EmpRegistController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hi/empspring/controller/EmpRegistController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/hi/empspring/domain/EmpRegistRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hi/empspring/domain/EmpRegistRequest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/hi/empspring/mapper/EmpMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hi/empspring/mapper/EmpMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/hi/empspring/service/EmpModifyService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hi/empspring/service/EmpModifyService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/hi/empspring/service/EmpReadService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hi/empspring/service/EmpReadService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/hi/empspring/service/EmpRegistService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hi/empspring/service/EmpRegistService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mappers/EmpMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mappers/EmpMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/spring/root-context.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/spring/root-context.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/spring/servlet-context.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/spring/servlet-context.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/list.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/list.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/modifyForm.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/modifyForm.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/registForm.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/registForm.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -106,25 +85,26 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/thfka/Documents/github/Class/springProject/IntelliJ/SpringBasicBoard&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;spring.configuration.checksum&quot;: &quot;bff9dc9a9afd7090eb8fe1eb7fbc6ece&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "C:/Users/hi/Documents/GitHub/Class/springProject/SIntelliJ/EmpSpring",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.2",
+    "spring.configuration.checksum": "bff9dc9a9afd7090eb8fe1eb7fbc6ece",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\thfka\Documents\github\Class\springProject\SIntelliJ\EmpSpring\src\main\resources" />
@@ -239,6 +219,7 @@
       <workItem from="1685250256179" duration="13526000" />
       <workItem from="1685272507012" duration="8238000" />
       <workItem from="1685333607170" duration="4671000" />
+      <workItem from="1685534400252" duration="626000" />
     </task>
     <servers />
   </component>
