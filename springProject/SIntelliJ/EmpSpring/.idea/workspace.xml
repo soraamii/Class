@@ -5,9 +5,33 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e37b2a19-5dce-4360-a3c3-06e2dd2c5211" name="Changes" comment="">
+<<<<<<< HEAD
       <change afterPath="$PROJECT_DIR$/../ch3/src/main/java/com/fastcampus/ch3/DBConnectionTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../ch3/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ch3/pom.xml" afterDir="false" />
+=======
+      <change afterPath="$PROJECT_DIR$/../../../jspProject/Ajax/.classpath" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../jspProject/Ajax/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../jspProject/Ajax/.project" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../jspProject/Ajax/src/main/webapp/META-INF/MANIFEST.MF" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../jspProject/Ajax/src/main/webapp/ajax1.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../jspProject/Ajax/src/main/webapp/data.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../jspProject/Ajax/src/main/webapp/data.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../jspProject/Ajax/src/main/webapp/data.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../IntelliJ/SpringBasicBoard/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../IntelliJ/SpringBasicBoard/src/main/java/com/hi/board/controller/ReplyRestController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../IntelliJ/SpringBasicBoard/src/main/java/com/hi/board/controller/member/IdCheckContoller.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../IntelliJ/SpringBasicBoard/src/main/java/com/hi/board/domain/ReplyDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../IntelliJ/SpringBasicBoard/src/main/java/com/hi/board/mapper/ReplyMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../IntelliJ/SpringBasicBoard/src/main/java/com/hi/board/service/ReplyInsertService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../IntelliJ/SpringBasicBoard/src/main/java/com/hi/board/service/ReplyReadService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../IntelliJ/SpringBasicBoard/src/main/java/com/hi/board/service/member/MemberIdCheckService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../sql/tbl_reply_query.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../IntelliJ/SpringBasicBoard/src/main/java/com/hi/board/mapper/MemberMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../IntelliJ/SpringBasicBoard/src/main/java/com/hi/board/mapper/MemberMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../IntelliJ/SpringBasicBoard/src/main/webapp/WEB-INF/views/board/read.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../../IntelliJ/SpringBasicBoard/src/main/webapp/WEB-INF/views/board/read.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../IntelliJ/SpringBasicBoard/src/main/webapp/WEB-INF/views/member/regist.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../../IntelliJ/SpringBasicBoard/src/main/webapp/WEB-INF/views/member/regist.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+>>>>>>> dbfb54ad97fdecfba88c1652d647d799df722268
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -70,10 +94,18 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
+<<<<<<< HEAD
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
     "last_opened_file_path": "C:/Users/thfka/Documents/github/Class/springProject/IntelliJ/SpringBasicBoard",
+=======
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "C:/Users/hi/Documents/GitHub/Class/springProject/SIntelliJ/EmpSpring",
+>>>>>>> dbfb54ad97fdecfba88c1652d647d799df722268
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -199,10 +231,15 @@
       <workItem from="1685171246611" duration="2045000" />
       <workItem from="1685250256179" duration="13526000" />
       <workItem from="1685272507012" duration="8238000" />
+<<<<<<< HEAD
       <workItem from="1685333607170" duration="4737000" />
       <workItem from="1685339725832" duration="272000" />
       <workItem from="1685340019424" duration="598000" />
       <workItem from="1685342703347" duration="1084000" />
+=======
+      <workItem from="1685333607170" duration="4671000" />
+      <workItem from="1685534400252" duration="626000" />
+>>>>>>> dbfb54ad97fdecfba88c1652d647d799df722268
     </task>
     <servers />
   </component>
